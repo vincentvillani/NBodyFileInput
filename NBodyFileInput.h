@@ -16,6 +16,6 @@
 #include "NBodyFrameBuffer.h"
 
 NBodyFileHeader* FileInputReadHeader(FILE* inputFile);
-void FileInputReadFrame(uint64_t frameNumber, NBodyFrameBuffer* frameBuffer, FILE* inputFile);
+void FileInputReadFrame(NBodyFileHeader* fileHeader, uint64_t frameNumber, NBodyFrameBuffer* frameBuffer, FILE* inputFile);
 
 #endif /* NBODYFILEINPUT_H_ */
